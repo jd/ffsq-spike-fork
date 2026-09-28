@@ -1,0 +1,9 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "sha=$GITHUB_SHA ref=$GITHUB_REF"
